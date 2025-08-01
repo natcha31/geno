@@ -1,60 +1,39 @@
-.app-container {
-  max-width: 500px;
-  margin: 40px auto;
-  font-family: 'Sarabun', sans-serif;
-  text-align: center;
-  padding: 20px;
-}
+  .app-container {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: "Sarabun", sans-serif;
+    text-align: center;
+  }
 
-h2 {
-  font-size: 24px;
-  color: #333;
-}
+  select,
+  input[type="text"] {
+    padding: 8px;
+    margin: 10px 5px;
+    font-size: 16px;
+    width: 90%;
+    max-width: 300px;
+  }
 
-input[type="text"] {
-  padding: 8px;
-  margin: 10px 5px;
-  font-size: 16px;
-  width: 90%;
-  max-width: 300px;
-  border: 2px solid #007acc;
-  border-radius: 8px;
-  outline: none;
-}
-
-input[type="text"]:focus {
-  border-color: #005f99;
-}
-
-select {
-  padding: 8px;
-  margin: 10px 0;
-  font-size: 16px;
-  border: 2px solid #007acc;
-  border-radius: 8px;
-  outline: none;
-}
-
-.flashcard {
-  margin: 20px auto;
-  width: 280px;
-  height: 150px;
-  background: #f9f9f9;
-  border: 2px solid #007acc;
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #007acc;
-  user-select: none;
-  perspective: 1000px;
-  position: relative;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
+  .flashcard {
+    margin: 20px auto;
+    width: 280px;
+    height: 150px;
+    background: #f9f9f9;
+    border: 2px solid #007acc;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #007acc;
+    user-select: none;
+    perspective: 1000px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
 
 .flashcard.flipped {
   transform: rotateY(180deg);
@@ -73,31 +52,37 @@ select {
   box-sizing: border-box;
 }
 
-.flashcard .back {
-  background: #fff;
-  color: #333;
-  font-weight: 500;
-  transform: rotateY(180deg);
-  border-radius: 12px;
-}
+  .flashcard .back {
+    color: #333;
+    font-weight: 500;
+    background: #fff;
+    transform: rotateY(180deg);
+    border-radius: 12px;
+    border: 2px solid #007acc;
+  }
 
-button {
-  background-color: #007acc;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  margin: 10px 5px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  .buttons {
+    margin-top: 15px;
+  }
 
-button:hover {
-  background-color: #005f99;
-}
+  button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-p {
-  font-size: 14px;
-  color: #555;
-}
+  button:hover {
+    background-color: #005f99;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
